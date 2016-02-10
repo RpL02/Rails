@@ -31,7 +31,7 @@ ENV RAILS_ENV production
 ENV PORT 8080
 
 #bundle install
-RUN /bin/bash -l -c "bundle install -withot development test"
+RUN /bin/bash -l -c "bundle install --without development test"
 
 #publish port 8080
 EXPOSE 8080
